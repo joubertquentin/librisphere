@@ -8,15 +8,15 @@
     <link rel="icon" type="image/x-icon" href="Logo_librisphère.png">
     <title>Contact</title>
     <script>
-        // Fonction pour mettre à jour les sous-catégories en fonction de la catégorie sélectionnée
+        
         function updateSousCategorie() {
             var categorie = document.getElementById('categorie').value;
             var sousCategorieSelect = document.getElementById('sous_categorie');
             
-            // Effacer les options existantes dans le sous-catégorie
+            
             sousCategorieSelect.innerHTML = '<option value="">-- Sélectionnez --</option>';
 
-            // Ajouter les options de sous-catégorie en fonction de la catégorie sélectionnée
+            
             if (categorie === 'Compte') {
                 var options = [
                     'Deconnexion du compte impossible',
