@@ -7,7 +7,7 @@ use App\Models\Livre;
 
 class PanierController extends Controller
 {
-    // Affichage du panier
+    
     public function index()
 {
     $utilisateur = session('utilisateur');
@@ -18,7 +18,7 @@ class PanierController extends Controller
 
     $panier = session('panier', []);
 
-    // 🛠 Ici on va chercher les commandes en base de données, pas en session
+    
     $commandes = DB::table('commandes')->get()->map(function ($commande) {
         return (array) $commande;
     })->toArray();
